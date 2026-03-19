@@ -11,11 +11,14 @@ using namespace std;
 
 int main() {
 
-    vector<double> a(10*10, 0.0);
-    a= randsvd_work(10, 10, -1e10, 3);
 
-    print_matrix(a.data(),10,10);
+    std::vector<double> A = randsvd_work( 5, 5, -1e3, 3);
 
+    print_matrix(A.data(), 5, 5);
+
+    double cond = cond2( A, 5, 5);
+    cout << cond << endl;
 
     return 0;
+
 }
