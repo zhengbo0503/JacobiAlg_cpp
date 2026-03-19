@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/cyae/Programming/cpp/one-sided-jacobi/build",
+  "command": "/usr/bin/clang++  -I/Users/cyae/OpenBLAS/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/one_sided_jacobi.dir/main.cpp.o -c /Users/cyae/Programming/cpp/one-sided-jacobi/main.cpp",
+  "file": "/Users/cyae/Programming/cpp/one-sided-jacobi/main.cpp",
+  "output": "CMakeFiles/one_sided_jacobi.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/cyae/Programming/cpp/one-sided-jacobi/build",
+  "command": "/usr/bin/clang++  -I/Users/cyae/OpenBLAS/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/one_sided_jacobi.dir/jacobi.cpp.o -c /Users/cyae/Programming/cpp/one-sided-jacobi/jacobi.cpp",
+  "file": "/Users/cyae/Programming/cpp/one-sided-jacobi/jacobi.cpp",
+  "output": "CMakeFiles/one_sided_jacobi.dir/jacobi.cpp.o"
+}
+]
