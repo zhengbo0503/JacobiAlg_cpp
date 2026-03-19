@@ -10,25 +10,12 @@
 using namespace std;
 
 int main() {
-    vector<double> ones(20, 1.0);
 
-    int n = 5;
-    int lda = n;
-    int info = 1;
-    int iseed[4] = {1,2,3,5};
-    double* A = new double[lda*n];
-    double* work = new double[2 * n];
-    for (int j = 0; j < n; ++j) {
-        for (int i = 0; i < n; ++i) {
-            A[i + j * lda] = (i == j) ? (i + 1.0) : 0.0;
-        }
-    }
-    print_matrix(A, n, lda);
+    vector<double> a(10*10, 0.0);
+    a= randsvd_work(10, 10, -1e10, 3);
 
-    dlarge_(&n, A, &lda, iseed, work, &info);
+    print_matrix(a.data(),10,10);
 
-    print_matrix(A, n, lda);
-    cout << info << endl;
 
     return 0;
 }
